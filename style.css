@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.game-container {
+  text-align: center;
+}
+
+.game-area {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: #87ceeb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+#basket {
+  width: 80px;
+  height: 60px;
+  background-color: #8b4513;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fruit {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px; /* Start above the screen */
+  animation: fall 2s linear infinite;
+  cursor: pointer;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(400px);
+  }
+}
+
+.apple {
+  background-color: red;
+}
+
+.banana {
+  background-color: yellow;
+}
+
+.orange {
+  background-color: orange;
+}
