@@ -1,5 +1,5 @@
 # Fruit Catcher 🍎🍓
-
+ 
 **Fruit Catcher** is a fun game where you catch falling fruits in a basket. The more fruits you catch, the higher your score! Be careful, missing fruits will affect your score.
 
 ## Gameplay
